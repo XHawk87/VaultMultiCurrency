@@ -12,6 +12,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <netbeans.hint.license>gpl30</netbeans.hint.license>
     </properties>
     
     <repositories>
@@ -56,10 +57,6 @@
                 <includes>
                     <include>**</include>
                 </includes>
-                <!-- Don't add source files to target jar -->
-                <excludes>
-                    <exclude>me/xhawk87/**/*.java</exclude>
-                </excludes>
             </resource>
             <resource>
                 <directory>src/main/resources/</directory>
