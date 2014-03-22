@@ -1,0 +1,26 @@
+name: ${project.name}
+main: ${project.groupId}.${project.artifactId}.${project.name}
+version: ${project.version}
+description: ${project.description}
+depend: [Vault]
+
+commands:
+  SetEconomy:
+    description: Sets the current Vault economy from all those registered
+    usage: /SetEconomy ([(p:)player|(w:)world]) [economy] (-s)
+    permission: vmc.commands.seteconomy
+  ListEconomies:
+    description: Displays a list of all installed Economy plugins for use with /SetEconomy
+    usage: /ListEconomies
+    permission: vmc.commands.listeconomies
+
+permissions:
+  vmc.commands.seteconomy:
+    description: Gives full permission to use the /SetEconomy command
+    default: op
+  vmc.commands.seteconomy.self:
+    description: Gives permission to use the /SetEconomy command for self only
+    default: false
+  vmc.commands.listeconomies:
+    description: Allows use of the /ListEconomies command
+    default: op
